@@ -7,7 +7,7 @@
             <v-row no-gutters>
               <v-col cols="5" sm="12">
                 <div class="card-img">
-                  <v-img :src="game.thumbnail"></v-img>
+                  <img :src="game.thumbnail" />
                 </div>
               </v-col>
               <v-col cols="7" sm="12">
@@ -63,9 +63,15 @@ export default {
 .card-img {
   padding: 15px;
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
-.card-img div {
+.card-img img {
   border-radius: 8px;
+  object-fit: contain;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -76,6 +82,7 @@ export default {
   line-height: 18px;
   margin-bottom: 8px;
   display: block;
+  white-space: nowrap;
 }
 .description {
   color: #838383;
@@ -136,9 +143,13 @@ export default {
   }
   .description {
     padding-bottom: 0px;
+    margin-top: -5px;
   }
   .overflow-dis {
     height: auto;
+  }
+  .card {
+    border-radius: 8px;
   }
 }
 </style>
