@@ -114,18 +114,18 @@ export default {
   overflow: hidden;
 }
 .space {
-  padding-top: 53px;
+  padding: 53px 0px;
   margin: 0 228px;
 }
 @media only screen and (max-width: 1280px) {
   .space {
-    padding-top: 53px;
+    padding: 53px 0px;
     margin: 0 30px;
   }
 }
 @media only screen and (max-width: 540px) {
   .space {
-    padding-top: 18px;
+    padding: 18px 0px;
     margin: 0 24px;
   }
   .content {
