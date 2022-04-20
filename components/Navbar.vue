@@ -49,11 +49,6 @@ export default {
 }
 @media only screen and (max-width: 540px) {
   .headers {
-    margin: 0 50px;
-  }
-}
-@media only screen and (max-width: 376px) {
-  .headers {
     margin: 0 18px 0 0;
     justify-content: space-between;
   }

@@ -109,7 +109,7 @@ export default {
   padding: 15px 15px 15px 15px;
 }
 .overflow-dis {
-  height: 63px;
+  height: 60px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -125,24 +125,20 @@ export default {
 }
 @media only screen and (max-width: 540px) {
   .space {
-    padding-top: 35px;
-    margin: 0 24px;
-  }
-  .description {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-}
-@media only screen and (max-width: 376px) {
-  .space {
     padding-top: 18px;
     margin: 0 24px;
   }
   .content {
-    padding: 6px 6px 6px 0;
+    padding: 0px 6px 6px 0;
   }
   .card-img {
     padding: 6px;
+  }
+  .description {
+    padding-bottom: 0px;
+  }
+  .overflow-dis {
+    height: auto;
   }
 }
 </style>
